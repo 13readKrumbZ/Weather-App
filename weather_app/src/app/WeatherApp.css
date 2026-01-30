@@ -1,0 +1,67 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.app::before {
+  background: url("./resource/background/sky.jpg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  align-items: center;
+  padding: 15px;
+}
+
+.input {
+  background-color: rgba(102, 79, 52, 0.23);
+  display: flex;
+
+  flex-direction: column;
+  border-radius: 7px;
+  width: 350px;
+  margin: 5px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.temperatur {
+  font-size: 100px;
+}
+
+.city {
+  font-size: 40px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: right;
+  font-size: 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
